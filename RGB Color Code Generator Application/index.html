@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RGB Color Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>RGB Color Generator By Sangram</h1>
+    <div class="color-box" id="colorBox"></div>
+    <p id="rgbCode">RGB(0, 0, 0)</p>
+
+    <div class="sliders">
+      <label>R <input type="range" id="rSlider" min="0" max="255" value="0" oninput="updateFromSlider()"></label>
+      <label>G <input type="range" id="gSlider" min="0" max="255" value="0" oninput="updateFromSlider()"></label>
+      <label>B <input type="range" id="bSlider" min="0" max="255" value="0" oninput="updateFromSlider()"></label>
+    </div>
+
+    <div class="buttons">
+      <button onclick="generateColor()">Generate</button>
+      <button onclick="copyColorCode()">Copy</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
