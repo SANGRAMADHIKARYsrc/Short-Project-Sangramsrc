@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/3004/3004516.png">
+</head>
+<body>
+
+  <div class="floating-balls"></div>
+
+  <div class="side-text left">
+    <h2>Fast</h2>
+    <p>Create QR codes instantly for any text or link.</p>
+  </div>
+
+  <div class="container">
+    <img src="https://cdn-icons-png.flaticon.com/128/3004/3004516.png" alt="QR Icon" class="qr-icon">
+    <h1>QR Code Generator</h1>
+    <input type="text" id="qrInput" placeholder="Enter text or URL...">
+    <button onclick="generateQR()">Generate</button>
+    <div class="qr-box" id="qrBox">
+      <img id="qrImage" src="" alt="QR Code">
+      <a id="downloadBtn" download="qr-code.png">Download PNG</a>
+    </div>
+  </div>
+
+  <div class="side-text right">
+    <h2>Secure</h2>
+    <p>No data is stored—100% browser-side generation.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
